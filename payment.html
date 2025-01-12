@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+</head>
+<style>
+    body {
+        background-color: rgb(181, 197, 212);
+    }
+
+    .containers {
+        width: 900px;
+        height: 970px;
+        background-color: white;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgb(78, 76, 76);
+
+    }
+
+    .RR-logo {
+        width: 20%;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .title-name {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        margin-top: -10px;
+
+    }
+
+    .address {
+        text-align: right;
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-right: 10px;
+
+
+    }
+
+    .RR-image {
+        height: 200px;
+        width: 350px;
+        border-radius: 10px;
+        margin-top: -30px;
+
+    }
+
+    .name {
+        text-align: right;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-right: 150px;
+
+    }
+
+    .key {
+        color: gray;
+        margin-left: 380px;
+        margin-top: -130px;
+
+
+    }
+
+
+    .value {
+        margin-left: 600px;
+        font-weight: bold;
+        margin-top: -187px;
+
+
+    }
+
+
+    .details {
+        font-weight: bold;
+        font-size: 17px;
+
+
+    }
+
+    .RR {
+        border-bottom: 1px dashed black;
+    }
+
+    .text {
+        padding: 10px;
+        font-size: 16px;
+        background-color: rgb(17, 241, 241);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .HOD {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 7px;
+        margin-right: 30px;
+
+    }
+
+    .stamp {
+        height: 120px;
+        width: 140px;
+        margin-left: 720px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .last {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 17px;
+        padding: 2px;
+        text-align: center;
+        background-color: yellow;
+    }
+
+    .head {
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: -240px;
+        padding: 10px;
+
+    }
+
+    .col {
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: -20px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+       
+    /* Mobile */
+    @media (max-width: 480px) {
+        .containers {
+            width: 100%;
+            height:auto;
+            padding: 5px;
+        
+        }
+
+
+        .RR-logo {
+            width: 50%;
+            height: auto;
+        }
+
+        .title-name {
+            font-size: 18px;
+        }
+
+        .address {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .RR-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .name {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .key, .value {
+            margin-left: 10px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+
+        .RR{
+            margin-top: 35px;
+        }
+
+        .details {
+            font-size: 15px;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .HOD {
+            font-size: 16px;
+        }
+
+        .last {
+            font-size: 14px;
+        }
+
+        .head {
+            font-size: 16px;
+        }
+
+        .col {
+            font-size: 14px;
+        }
+    }
+
+
+
+
+        /*tablet*/
+    @media (max-width: 768px) {
+        .containers {
+            width: 90%;
+            height: 1400px;
+            padding: 10px;
+        }
+
+        .RR-logo {
+            width: 30%;
+            height: auto;
+        }
+
+        .RR-image {
+            width: 80%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .key {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .value {
+            margin-left: 200px;
+            margin-top: -185px;
+        }
+
+        .stamp {
+            margin-left: 80%;
+            transform: translateX(-50%);
+        }
+
+        .HOD {
+            text-align: right;
+           
+        }
+    }
+
+    
+</style>
+
+<body>
+
+    <div class="containers">
+        <img src="RR.logo.avif" alt="Rang Rover logo" class="RR-logo" />
+        <h3 class="title-name">Range Rover Autobiography ... ®</h3>
+
+
+        <div class="address">
+            <p>Modi House Sr.No.131, <br>
+                Pune Bangalore Highway, <br>
+                Pune, Maharashtra 411053 <br>
+                91+7385360081 </p>
+            <hr>
+        </div class="RR-body">
+        <h2 class="name">Payment Receipt .... 🎀</h2>
+        <img src="RR1.jpg" alt="RR-image" class="RR-image" />
+
+
+
+        <div class="details">
+            <div class="key">Receipt No. : <br>
+                <p>Name of Model :<br></p>
+                <p>Engine No :<br></p>
+                <p>Payment Method :<br></p>
+                <p>Amount :</p>
+            </div>
+
+            <div class="value">
+                <p class="RR">DRF7650 <br></p>
+                <p class="RR">Range Rover Autobiography <br></p>
+                <p class="RR"> 47A07767B <br></p>
+                <p class="RR">on cash <br></p>
+                <p class="RR">3.77 crore</p>
+            </div>
+            <br>
+            <hr>
+        </div>
+        <p class="text">
+            WELCOME, <br>
+            <br>
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;Mr DEVAN FULSUNDAR</b>
+            Congratulations on becoming a proud owner RANGE ROVER AUTOBIOGRAPHY .
+            A world in which by breaking new grounds, confronting new challenges and not being content with the
+            expected, your Land Rover truly helps you go "The Land Rover Experience".
+        </p>
+        <hr>
+
+        <div>
+
+            <img src="new.png" alt="stamp" class="stamp" />
+            <p class="HOD">RR-Teams-HOD</p>
+            <p class="last">Thank you for choosing Land Rover. We are committed to providing you .......</p>
+            <p class="head">Customer services : <br></p>
+            <br>
+            <p class="col">Full Tank of Fuel upon Delivery <br>
+
+                Invitations to Off-Road Clinics <br>
+
+                Security Each-3 Year Policy <br></p>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
